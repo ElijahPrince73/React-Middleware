@@ -6,6 +6,7 @@ class UserList extends Component {
   componentWillMount() {
     this.props.fetchUsers()
   }
+  
   renderUser(user){
     return (
       <div key={user.name} className='card card-block'>
